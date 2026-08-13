@@ -1,85 +1,137 @@
 # Credit-Card-Fraud-Detection-using-Machine-Learning
 A machine learning-based fraud detection system that identifies fraudulent financial transactions using scikit-learn and a class-weighted Logistic Regression model. Includes data preprocessing, feature engineering, model evaluation, and an interactive Streamlit web application for real-time fraud prediction.
 
-🚀 Features
-Detects fraudulent transactions using Machine Learning
-Interactive web interface built with Streamlit
-Real-time prediction based on user inputs
-Data preprocessing integrated into the ML pipeline
-Easy-to-use interface for testing transactions
 
-🛠️ Technologies Used
-Python
-Streamlit
-Scikit-learn
-Pandas
-NumPy
-Joblib
-Jupyter Notebook
+## 📌 Project Overview
+Credit Card Fraud Detection is a Machine Learning project developed to identify whether a financial transaction is legitimate or fraudulent. The application uses transaction details provided by the user and predicts the transaction status using a trained Machine Learning model. A user-friendly web interface is built using Streamlit to make predictions in real time.
+---
 
-📂 Project Structure
+## 🎯 Objective
+The primary objective of this project is to reduce financial fraud by accurately detecting suspicious transactions using Machine Learning techniques. The application enables users to enter transaction details and instantly receive a fraud prediction.
+
+---
+
+## 🚀 Features
+- Interactive web application built with Streamlit.
+- Predicts fraudulent and legitimate transactions in real time.
+- Machine Learning pipeline for preprocessing and prediction.
+- User-friendly interface with simple input fields.
+- Fast and accurate prediction using a trained model.
+- Easy deployment and reusable prediction pipeline.
+
+---
+
+## 🛠️ Technologies Used
+- Python
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
+- Jupyter Notebook
+---
+
+## 📂 Project Structure
+```
 Credit-Card-Fraud-Detection/
 │── fraud_detection.py              # Streamlit application
-│── analysis_madel.ipynb            # Model training and analysis
-│── fraud_detection_pipeline.pkl    # Trained ML model
+│── analysis_madel.ipynb            # Data analysis and model training
+│── fraud_detection_pipeline.pkl    # Saved ML pipeline
 │── AIML Dataset.csv                # Dataset
 │── requirements.txt
 │── README.md
-📊 Dataset
+```
+---
 
-The dataset contains transaction information such as:
-Transaction Type
-Transaction Amount
-Sender Balance
-Receiver Balance
+## 📊 Dataset
+The dataset contains transaction information including:
+- Transaction Type
+- Transaction Amount
+- Sender Old Balance
+- Sender New Balance
+- Receiver Old Balance
+- Receiver New Balance
 
-These features are used to classify a transaction as:
-0 → Legitimate Transaction
-1 → Fraudulent Transaction
+These features are used to classify transactions as:
+- **0 → Legitimate Transaction**
+- **1 → Fraudulent Transaction**
+---
 
-⚙️ Machine Learning Workflow
-Load and preprocess the dataset.
-Perform exploratory data analysis (EDA).
-Encode categorical features.
-Split the dataset into training and testing sets.
-Train the Machine Learning model.
-Save the trained model using Joblib.
-Deploy the model with Streamlit.
+## ⚙️ Project Workflow
+1. Load the transaction dataset.
+2. Perform data preprocessing and cleaning.
+3. Encode categorical features.
+4. Split the dataset into training and testing sets.
+5. Train the Machine Learning model.
+6. Save the trained model using Joblib.
+7. Develop a Streamlit application.
+8. Predict transaction status based on user inputs.
+---
 
-▶️ Installation
-Clone the repository:
-https://github.com/Nayanapatelgc/Credit-Card-Fraud-Detection-using-Machine-Learning.git
+## 🖥️ User Inputs
+The application accepts the following inputs:
+- Transaction Type
+- Transaction Amount
+- Sender Old Balance
+- Sender New Balance
+- Receiver Old Balance
+- Receiver New Balance
+---
 
+## 📈 Prediction Output
+The model predicts one of the following:
+- ✅ 0 -> Legitimate Transaction
+- ❌ 1 -> Fraudulent Transaction
+---
+
+## ▶️ Installation
+### Clone the Repository
+```bash
+git clone https://github.com/Nayanapatelgc/Credit-Card-Fraud-Detection.git
+```
+
+### Navigate to Project Folder
+```bash
 cd Credit-Card-Fraud-Detection
+```
 
-Install dependencies:
+### Install Required Packages
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
+### Run the Application
+```bash
 streamlit run fraud_detection.py
-
-💻 Application Interface
-The user provides:
-Transaction Type
-Transaction Amount
-Sender Old Balance
-Sender New Balance
-Receiver Old Balance
-Receiver New Balance
-
-The application predicts whether the transaction is:
-✅ Legitimate Transaction
-❌ Fraudulent Transaction
-
-📈 Future Improvements
-Improve model accuracy using ensemble learning.
-Deploy the application on Streamlit Cloud.
-Add transaction history and analytics dashboard.
-Integrate explainable AI (SHAP/LIME) for prediction interpretation.
-Connect with a real-time transaction database.
+```
 
 
+## 🔮 Future Enhancements
+- Improve model accuracy using advanced algorithms.
+- Deploy the application on Streamlit Cloud.
+- Add data visualization dashboard.
+- Implement Explainable AI (SHAP/LIME).
+- Integrate with real-time banking transaction systems.
+- Support batch transaction prediction.
+---
 
-👩‍💻 Author
-Nayana Patel G C
+## 📚 Learning Outcomes
+
+Through this project, I gained practical experience in:
+- Machine Learning model development
+- Data preprocessing
+- Feature engineering
+- Model serialization using Joblib
+- Building web applications with Streamlit
+- Real-time prediction systems
+- Python programming
+- End-to-end ML project deployment
+---
+
+## 👩‍💻 Author
+**Nayana Patel G C**
+Computer Science Engineering Student
+Python Full Stack Developer | Machine Learning Enthusiast | Data Analytics Learner
 GitHub: https://github.com/Nayanapatelgc
+---
+
